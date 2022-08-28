@@ -10,11 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
-- script: |
-    sudo apt-get install apache2
-  displayName: 'installing apache2'
-
 - task: NodeTool@0
   inputs:
     versionSpec: '16.x'
@@ -23,5 +18,5 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install
-    ng build --configuration production --aot --output-path "/var/www/html"
+    ng build --configuration production
   displayName: 'npm install and build'
