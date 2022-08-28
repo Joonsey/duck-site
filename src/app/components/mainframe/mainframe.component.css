@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+.red-text {
+	color:red;
+}
+
+.description-list {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.description-list li {
+	padding: 0 5px
+}
+
+.duck-name {
+	transition: 0.2s ease-in-out;
+}
+
+.duck-name:hover {
+	transform: translateY(5px);
+	text-decoration: 3px yellowgreen underline;
+}
+
+
