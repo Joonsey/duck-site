@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+.centered {
+	text-align: center;
+	font-size: 3em;
+}
 
 * {
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
@@ -19,11 +25,12 @@ ul {
 }
 
 .description-list li {
-	padding: 0 5px
+	padding: 2px 5px;
 }
 
 .duck-name {
 	transition: 0.2s ease-in-out;
+	text-decoration: 3px rgba(0,120,120,0) underline;
 }
 
 .duck-name:hover {

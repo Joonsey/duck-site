@@ -1,15 +1,16 @@
-<canvas id="mainframe"></canvas>
+<!--<canvas id="mainframe"></canvas>-->
 
+<h1 class="centered huge">All the duckies! 🦆🦆</h1>
 <ul>
 	<li *ngFor="let duck of ducks">
 		<span>
 			<h1 class="duck-name">{{duck.name}}</h1>
 			<ul class="description-list">
 				<li>
-					Age: {{duck.age}}.
+					Age: {{duck.age}}
 				</li>
 				<li *ngIf="duck.alcoholic">
-					<b class="red-text">alcoholic</b>
+					<b class="red-text">alcoholic 🍷</b>
 				</li>
 			</ul>
 		</span>
