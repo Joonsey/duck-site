@@ -1,7 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+.container {
+	margin: 10px 100px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.duck-box {
+	width: 250px;
+	height: 120px;
+	margin: 15px;
+	background-color: ghostwhite;
+	border-radius: 5px;
+	box-shadow: 5px 4px 20px #88888855;
+	transition: 0.5s ease-out;
+}
+
+.duck-name {
+	margin-top: 12px;
+}
+
+.duck-box:hover {
+	box-shadow: 9px 9px 6px #88888855;
+
+}
+
+.info-text {
+	margin: 15px 0 0 15px;
+}
+
+.duck-card-header {
+	display: flex;
+	margin-top: 5px;
+	justify-content: start;
+}
+
+.logo {
+	width: 55px;
+	border-radius: 50%;
+}
+
 .centered {
 	text-align: center;
+}
+
+.huge {
 	font-size: 3em;
 }
 
@@ -11,31 +56,8 @@
 	padding: 0;
 }
 
-ul {
-	list-style: none;
-}
-
 .red-text {
 	color:red;
-}
-
-.description-list {
-	display: flex;
-	justify-content: flex-start;
-}
-
-.description-list li {
-	padding: 2px 5px;
-}
-
-.duck-name {
-	transition: 0.2s ease-in-out;
-	text-decoration: 3px rgba(0,120,120,0) underline;
-}
-
-.duck-name:hover {
-	transform: translateY(5px);
-	text-decoration: 3px yellowgreen underline;
 }
 
 

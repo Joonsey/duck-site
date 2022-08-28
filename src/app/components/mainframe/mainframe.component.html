@@ -1,18 +1,15 @@
 <!--<canvas id="mainframe"></canvas>-->
-
 <h1 class="centered huge">All the duckies! 🦆🦆</h1>
-<ul>
-	<li *ngFor="let duck of ducks">
-		<span>
-			<h1 class="duck-name">{{duck.name}}</h1>
-			<ul class="description-list">
-				<li>
-					Age: {{duck.age}}
-				</li>
-				<li *ngIf="duck.alcoholic">
-					<b class="red-text">alcoholic 🍷</b>
-				</li>
-			</ul>
-		</span>
-	</li>
-</ul>
+<div class="container">
+	<div *ngFor="let duck of ducks" class="duck-box">
+		<div class="duck-card-header">
+
+			<img class="logo" src="https://thumbs.dreamstime.com/b/low-poly-duck-image-vector-illustration-polygonal-duck-animal-logo-low-poly-duck-image-vector-illustration-polygonal-225906812.jpg" alt="duck-pick">
+			<h2 class="duck-name">{{duck.name}}</h2>
+		</div>
+		<div class="info-text">
+			<p class="age"> 🧓 {{duck.age}} </p>
+			<p class="red-text" *ngIf="duck.alcoholic"><b>🍷 alcoholic </b></p>
+		</div>
+	</div>
+</div>
