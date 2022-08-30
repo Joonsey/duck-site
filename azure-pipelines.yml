@@ -59,10 +59,11 @@ stages:
                     downloadType: "single"
                     artifactName: "DuckApp"
                     downloadPath: "$(Build.ArtifactStagingDirectory)"
-                - task: AzureWebApp@1
-                  inputs:
-                    azureSubscription: 'Azure subscription 1'
-                    appType: 'webApp'
-                    appName: 'RubberDuck-website'
-                    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
-                    deploymentMethod: 'auto'
+#                - task: AzureWebApp@1
+#                  inputs:
+#                    azureSubscription: 'Azure subscription 1'
+#                    appType: 'webApp'
+#                    appName: 'RubberDuck-website'
+#                    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+#                    deploymentMethod: 'auto'
+
