@@ -13,14 +13,13 @@ export class MainframeComponent implements OnInit {
 	ngOnInit(): void {
 
 		this.ducks = this.getAllDucks()
-		const canvas: HTMLCanvasElement = document.getElementById('mainframe') as HTMLCanvasElement;
+		//const canvas: HTMLCanvasElement = document.getElementById('mainframe') as HTMLCanvasElement;
 
 		// draw something on canvas
 
 	}
 	getAllDucks(): IDuck[] {
 		let ducks: IDuck[]  = []
-		//ducks.push({name: 'jae', age: 3, alcoholic: false, duckNumber: 'pog', color: 2})
 
 		let response: Promise<Response> = fetch(this.api_root)
 			.then((response) => (response.json()))
