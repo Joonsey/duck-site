@@ -10,16 +10,16 @@ const routes: Routes = [
 		component: MainframeComponent
 	},
 	{
-		path: "",
-		component: DefaultComponent
-	},
-	{
 		path: "new-duck",
 		component: CreateDuckComponent
 	},
 	{
+		path: "",
+		component: DefaultComponent
+	},
+	{
 		path: "**",
-		redirectTo: "ducks"
+		redirectTo: "new-duck"
 	},
 ];
 

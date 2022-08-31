@@ -7,6 +7,7 @@ import { MainframeComponent } from './components/mainframe/mainframe.component';
 import { DefaultComponent } from './components/default/default.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CreateDuckComponent } from './components/create-duck/create-duck.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CreateDuckComponent } from './components/create-duck/create-duck.compon
   ],
   imports: [
     BrowserModule,
+	HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

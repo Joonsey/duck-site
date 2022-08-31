@@ -1,5 +1,5 @@
 export interface IDuck {
-	duckNumber : string;
+	duckNumber? : string;
 	name : string;
 	age : number;
 	alcoholic : boolean;
