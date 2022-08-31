@@ -1,0 +1,30 @@
+.duck-creation-container
+{
+	margin:auto;
+	width: 250px;
+	height: 500px;
+	border: 2px black solid;
+	border-radius: 5%;
+}
+
+.duck-creation-info
+{
+	/*background-color: rgb(39, 38, 38);*/
+	padding: 20px;
+}
+
+.duck-description-container
+{
+	display:flex;
+	flex-direction: row;
+}
+
+.duck-description
+{
+	width: 70px;
+}
+
+.duck-description input
+{
+	width: inherit
+}
