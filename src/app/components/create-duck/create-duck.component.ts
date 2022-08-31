@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHandler, HttpHeaders } from '@angular/common/http'
 import { IDuck } from '../mainframe/duck';
 import { catchError, Observable, tap, throwError } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-duck',
@@ -14,7 +15,10 @@ export class CreateDuckComponent {
 
 	api_root = "https://rubberduckapi.azurewebsites.net/Duck";
 
-  	constructor(private http: HttpClient) {
+  	constructor(
+		private http: HttpClient,
+		private router: Router
+		) {
 	}
 
 	handleError(error: HttpErrorResponse) {
@@ -51,15 +55,23 @@ export class CreateDuckComponent {
 			color
 		}
 		let r : Observable<any> = this.http.post<any>(this.api_root, duck, httpOptions)
+		function validatePostRequestResponse(x: any): number {
+			if (x==200) {
+				console.log('succesfully created a duck!');
+				return 0
+			}
+			else {
+				console.log("s");
+				return 1
+			}
+		}
 		r.subscribe({
-			next(x) {
-				if (x==200) {console.log('succesfully created a duck!')}
-				else {console.log("s")}
-			},
+			next(x) {validatePostRequestResponse(x)},
 			error(msg) {
 				console.log("Error at request with message: ", msg)
 			}
 		})
+
 
 	}
 }
