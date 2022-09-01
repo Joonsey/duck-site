@@ -43,10 +43,9 @@ export class CreateDuckComponent {
 			})
 		}
 		var name: string= (<HTMLInputElement>document.getElementById("name")).value;
-		var age:number = Number((<HTMLInputElement>document.getElementById("age")).value);
-		//var alcoholic = Boolean((<HTMLInputElement>document.getElementById("alcoholic")).value);
-		var alcoholic = false
-		var color = Number((<HTMLInputElement>document.getElementById("color")).value);
+		var age: number = Number((<HTMLInputElement>document.getElementById("age")).value);
+		var alcoholic: boolean = Boolean((<HTMLInputElement>document.getElementById("alcoholic")).checked);
+		var color: number = Number((<HTMLInputElement>document.getElementById("color")).value);
 
 		var duck: IDuck = {
 			name,
